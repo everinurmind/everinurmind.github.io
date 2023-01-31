@@ -77,7 +77,7 @@ Hello! Here you will see my first personal portfolio Web-Page.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://github.com/everinurmind/portfolio-setup-and-mobile-first/tree/personal-portfolio)
+- [Live Demo Link](https://everinurmind.github.io)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
