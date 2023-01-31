@@ -786,7 +786,6 @@
   }
 
   .navigation {
-    width: 46px;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
@@ -796,6 +795,13 @@
     color: #344563;
     text-decoration-line: none;
     margin-right: 55px;
+    padding: 0 5px;
+  }
+
+  .navigation:hover {
+    background-color: #6070ff;
+    border-radius: 20px;
+    color: #fff;
   }
 
   .navigation-menu {
