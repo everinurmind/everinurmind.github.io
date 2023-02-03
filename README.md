@@ -23,6 +23,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [🎥 Loom Walkthrough](#loom-walkthrough)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -78,6 +79,12 @@ Hello! Here you will see my first personal portfolio Web-Page.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://everinurmind.github.io)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🎥 Loom Walkthrough <a name="loom-walkthrough"></a>
+
+- https://www.loom.com/share/b70c1ed063c140c2af77b16d4a9f5984
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
