@@ -1124,7 +1124,6 @@
   .action2 {
     box-sizing: border-box;
     display: flex;
-    align-items: left;
     justify-content: center;
     padding: 12px;
     gap: 10px;
@@ -1266,7 +1265,6 @@
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    align-items: left;
     color: #253858;
     margin: 16px 0 0 12px;
   }
