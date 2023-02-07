@@ -8,3 +8,11 @@ hamburger.addEventListener('click', () => {
   navigationMenu.classList.toggle('change');
   logo.classList.toggle('change');
 });
+
+document.querySelectorAll('.navigation').forEach((link) => link.addEventListener('click', () => {
+  hamburger.classList.toggle('change');
+  navigationMenu.classList.toggle('show');
+  navigationMenu.classList.remove('change');
+  logo.classList.toggle('change');
+}));
+
