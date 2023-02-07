@@ -42,13 +42,12 @@
     height: 40px;
     border-radius: 8px;
   }
-  
+
   .hamburger {
     cursor: pointer;
   }
 
-  .hamburger 
-  .bar-top,
+  .hamburger .bar-top,
   .bar-middle,
   .bar-bottom {
     justify-content: space-between;
@@ -61,10 +60,10 @@
     margin: 3px 0;
   }
 
- /* JS Section */
+  /* JS Section */
 
   #nm.change {
-    display: block; 
+    display: block;
     background-color: rgba(97, 113, 255, 0.8);
     backdrop-filter: blur(8px);
     width: 100vw;
@@ -85,24 +84,24 @@
   }
 
   .change .navigation:hover {
-    color: #EBEBFF;
+    color: #ebebff;
   }
-  
+
   .change .bar-top {
     transform: rotate(-45deg) translate(-2px, 2px);
     background: #fff;
   }
-  
+
   .change .bar-middle {
     opacity: 0;
   }
-  
+
   .change .bar-bottom {
     transform: rotate(45deg) translate(-8px, -8px);
     background: #fff;
   }
-  
-/* JS Section End */
+
+  /* JS Section End */
 
   .navbar.logo {
     display: flex;
