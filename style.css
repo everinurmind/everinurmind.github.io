@@ -74,7 +74,9 @@
     mix-blend-mode: multiply;
     backdrop-filter: blur(10px);
     width: 100vw;
-    height: 100vh;
+    height: 1000px;
+    margin-top: -262px;
+    margin-right: -12px;
   }
 
   .show .navigation {
