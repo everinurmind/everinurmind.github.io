@@ -70,7 +70,7 @@
     position: fixed;
     display: flex;
     flex-direction: row;
-    background: #6070FF;
+    background: #6070ff;
     mix-blend-mode: multiply;
     backdrop-filter: blur(10px);
     width: 100vw;
