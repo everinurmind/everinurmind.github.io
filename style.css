@@ -62,17 +62,26 @@
 
   /* JS Section */
 
-  #nm.change {
-    display: block;
-    background-color: rgba(97, 113, 255, 0.8);
-    backdrop-filter: blur(8px);
+  .logo.change {
+    display: none;
+  }
+
+  .navbar.change {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background: #6070FF;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(10px);
     width: 100vw;
     height: 100vh;
   }
 
   .show .navigation {
-    display: block;
-    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -100px;
   }
 
   .change .navigation {
@@ -81,6 +90,7 @@
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
+    margin-bottom: 130px;
   }
 
   .change .navigation:hover {
@@ -88,6 +98,8 @@
   }
 
   .change .bar-top {
+    margin-top: -200px;
+    margin-right: 20px;
     transform: rotate(-45deg) translate(-2px, 2px);
     background: #fff;
   }
