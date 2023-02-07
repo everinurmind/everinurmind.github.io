@@ -42,8 +42,15 @@
     height: 40px;
     border-radius: 8px;
   }
+  
+  .hamburger {
+    cursor: pointer;
+  }
 
-  .hamburger .bar {
+  .hamburger 
+  .bar-top,
+  .bar-middle,
+  .bar-bottom {
     justify-content: space-between;
     display: flex;
     flex-flow: column wrap;
@@ -53,6 +60,49 @@
     border-radius: 5px;
     margin: 3px 0;
   }
+
+ /* JS Section */
+
+  #nm.change {
+    display: block; 
+    background-color: rgba(97, 113, 255, 0.8);
+    backdrop-filter: blur(8px);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .show .navigation {
+    display: block;
+    text-align: left;
+  }
+
+  .change .navigation {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .change .navigation:hover {
+    color: #EBEBFF;
+  }
+  
+  .change .bar-top {
+    transform: rotate(-45deg) translate(-2px, 2px);
+    background: #fff;
+  }
+  
+  .change .bar-middle {
+    opacity: 0;
+  }
+  
+  .change .bar-bottom {
+    transform: rotate(45deg) translate(-8px, -8px);
+    background: #fff;
+  }
+  
+/* JS Section End */
 
   .navbar.logo {
     display: flex;
