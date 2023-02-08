@@ -10,8 +10,8 @@ hamburger.addEventListener('click', () => {
 });
 
 document.querySelectorAll('.navigation').forEach((link) => link.addEventListener('click', () => {
-  hamburger.classList.toggle('change');
-  navigationMenu.classList.toggle('show');
-  navigationMenu.classList.toggle('change');
-  logo.classList.toggle('change');
+  hamburger.classList.remove('change');
+  navigationMenu.classList.remove('show');
+  navigationMenu.classList.remove('change');
+  logo.classList.remove('change');
 }));
