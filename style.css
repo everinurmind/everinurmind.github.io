@@ -80,6 +80,10 @@
     margin-right: -12px;
   }
 
+  .show .navigation-menu {
+    margin-top: 150px;
+  }
+
   .show .navigation {
     display: flex;
     align-items: center;
