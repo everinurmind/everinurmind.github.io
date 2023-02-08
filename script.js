@@ -15,4 +15,3 @@ document.querySelectorAll('.navigation').forEach((link) => link.addEventListener
   navigationMenu.classList.remove('change');
   logo.classList.toggle('change');
 }));
-
