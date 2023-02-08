@@ -24,7 +24,8 @@
   }
 
   .navbar {
-    position: relative;
+  background-color: #ffffff6e;
+    position: fixed;
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -814,7 +815,8 @@
   }
 
   .navbar {
-    position: relative;
+    position: fixed;
+   background-color: #ffffff6e;
     padding: 30px;
     display: flex;
     justify-content: space-between;
