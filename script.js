@@ -29,18 +29,11 @@ const cardsContainer = [
   {
     id: 0,
     name: 'Tonic',
-    titleDescription: [
-      'CANOPY',
-      'Back End Dev',
-      '2015',
-    ],
+    titleDescription: ['CANOPY','Back End Dev','2015'],
     mainDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: 'worksimg/Snapshoot Portfolio@2x.png',
-    technologies: [
-      'html',
-      'css',
-      'javaScript'],
+    image: 'worksimg/Snapshoot Portfolio@1x.svg',
+    technologies: ['html','css','javaScript','ruby','bootstrap','gitHub'],
     liveVersion: '#',
     source: '#',
   },
@@ -48,18 +41,11 @@ const cardsContainer = [
   {
     id: 1,
     name: 'Multi-Post Stories',
-    titleDescription: [
-      'CANOPY',
-      'Back End Dev',
-      '2015',
-    ],
+    titleDescription: ['CANOPY','Back End Dev','2015'],
     mainDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
-    image: 'worksimg/Snapshoot Portfolio@2x (1).png',
-    technologies: [
-      'html',
-      'css',
-      'javaScript'],
+    image: 'worksimg/Snapshoot Portfolio@2x.svg',
+    technologies: ['html','css','javaScript','ruby','bootstrap','gitHub'],
     liveVersion: '#',
     source: '#',
   },
@@ -67,18 +53,11 @@ const cardsContainer = [
   {
     id: 2,
     name: 'Tonic',
-    titleDescription: [
-      'CANOPY',
-      'Back End Dev',
-      '2015',
-    ],
+    titleDescription: ['CANOPY','Back End Dev','2015'],
     mainDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: 'worksimg/Snapshoot Portfolio@2x (2).png',
-    technologies: [
-      'html',
-      'css',
-      'javaScript'],
+    image: 'worksimg/Snapshoot Portfolio@3x.svg',
+    technologies: ['html','css','javaScript','ruby','bootstrap','gitHub'],
     liveVersion: '#',
     source: '#',
   },
@@ -86,18 +65,11 @@ const cardsContainer = [
   {
     id: 3,
     name: 'Multi-Post Stories',
-    titleDescription: [
-      'CANOPY',
-      'Back End Dev',
-      '2015',
-    ],
+    titleDescription: ['CANOPY','Back End Dev','2015'],
     mainDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    image: 'worksimg/Snapshoot Portfolio@2x (3).png',
-    technologies: [
-      'html',
-      'css',
-      'javaScript'],
+    image: 'worksimg/Snapshoot Portfolio@4x.svg',
+    technologies: ['html','css','javaScript','ruby','bootstrap','gitHub'],
     liveVersion: '#',
     source: '#',
   },
@@ -123,16 +95,28 @@ const displayModal = (id) => {
           <li id="dot"></li>
           <li id="year">${cardsContainer[displayIdOf].titleDescription[2]}</li>
       </ul>
+      <img class="image" src="${cardsContainer[displayIdOf].image}">
   </div>
   
-        <div class="part2">
-        <img class="image" src="${cardsContainer[displayIdOf].image}">
-        <p>${cardsContainer[displayIdOf].description}</p>
-        <div id="tags"><ul class="tags">
-          <li>${cardsContainer[displayIdOf].technologies[0]}</li>
-          <li>${cardsContainer[displayIdOf].technologies[1]}</li>
-          <li>${cardsContainer[displayIdOf].technologies[2]}</li>
-        </ul></div>
+        
+  
+  <div class="part2">
+    <div id="destext">
+      <p>${cardsContainer[displayIdOf].description}</p>
+    </div>
+    <div id="column">     
+        <div id="tags">
+          <ul class="tags">
+            <li>${cardsContainer[displayIdOf].technologies[0]}</li>
+            <li>${cardsContainer[displayIdOf].technologies[1]}</li>
+            <li>${cardsContainer[displayIdOf].technologies[2]}</li>
+          </ul>
+          <ul class="tags">
+            <li>${cardsContainer[displayIdOf].technologies[3]}</li>
+            <li>${cardsContainer[displayIdOf].technologies[4]}</li>
+            <li>${cardsContainer[displayIdOf].technologies[5]}</li>
+          </ul>
+        </div>
           <div id="separation"></div>
           <div class="srcgit">
             <button id="actionbtn" class="action" href="${cardsContainer[displayIdOf].liveVersion}">See live
@@ -141,6 +125,7 @@ const displayModal = (id) => {
             <button id="actionbtn" class="action" href="${cardsContainer[displayIdOf].source}">See source
               <i class="lab la-github" id="git-sign"></i>
             </button>
+          </div>
           </div>
       </div>`;
 
@@ -177,7 +162,8 @@ cardsContainer.forEach((card) => {
                 <ul class="tags">
                 <li>${card.technologies[0]}</li>
                 <li>${card.technologies[1]}</li>
-                <li>${card.technologies[2]}</li></ul>
+                <li>${card.technologies[2]}</li>
+                </ul>
                 <button class="action" id="${card.id}">See Project</button>
           </div>
         </div>
