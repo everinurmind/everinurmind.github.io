@@ -457,6 +457,7 @@
   }
 
   .tags {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1176,6 +1177,7 @@
   }
 
   .tags {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: center;
