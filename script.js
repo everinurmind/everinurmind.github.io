@@ -166,8 +166,7 @@ const displayModal = (id) => {
 cardsContainer.forEach((card) => {
   const boxCard = document.createElement('div');
   boxCard.className = 'box-card';
-  const html = 
-`<section id="works">
+  const html = `<section id="works">
   <div class="works-container">
     <div class="works-card">
   <img class="image" src="${card.image}" alt=${card.name}>
