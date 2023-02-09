@@ -409,18 +409,16 @@
   }
 
   #client {
-    padding: 8px 0;
-    width: 55px;
+    padding: 8px 0 0 0;
     height: 32px;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
     color: #344563;
-    margin-right: 5px;
+    margin-right: 7px;
   }
 
   #dot {
-    margin: 5px 0;
     border-radius: 20px;
     width: 7px;
     height: 7px;
@@ -428,9 +426,9 @@
   }
 
   #role {
-    margin: 0 5px;
     padding: 8px 0;
-    width: 98px;
+    margin-left: 10px;
+    margin-right: 10px;
     height: 32px;
     font-weight: 600;
     font-size: 13px;
@@ -439,9 +437,8 @@
   }
 
   #year {
-    margin-left: 5px;
+    margin-left: 10px;
     padding: 8px 0;
-    width: 29px;
     height: 32px;
     font-weight: 600;
     font-size: 13px;
@@ -489,7 +486,7 @@
     width: 124px;
     height: 48px;
     left: 0;
-    margin-top: 15%;
+    margin-top: 12%;
     border-radius: 8px;
     border: 1px solid #6070ff;
     color: #6070ff;
@@ -1053,7 +1050,6 @@
     text-align: center;
     gap: 1rem;
     margin-bottom: 142px;
-    padding: 0 260px;
   }
 
   .works-card {
@@ -1138,11 +1134,11 @@
   }
 
   #client {
-    width: 75px;
     font-weight: 600;
     font-size: 18px;
     line-height: 24px;
     color: #344563;
+    margin-right: 7px;
   }
 
   #dot {
@@ -1153,7 +1149,8 @@
   }
 
   #role {
-    width: 98px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
@@ -1161,8 +1158,8 @@
   }
 
   #year {
+    margin-left: 10px;
     padding: 8px 0;
-    width: 29px;
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
@@ -1184,7 +1181,7 @@
     align-items: center;
     padding: 0;
     gap: 8px;
-    margin: 8px 8px 0 0;
+    margin: 24px 8px 0 0;
   }
 
   .tags li {
