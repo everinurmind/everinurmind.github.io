@@ -6,6 +6,44 @@
   list-style: none;
 }
 
+/* JS Works Section */
+
+.works-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 16px;
+  gap: 12px;
+  margin: 20px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.close {
+  margin-left: 259px;
+  color: #67798E;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  border: none;
+  background-color: transparent;
+}
+.main1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 0;
+  padding-bottom: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* JS Works Section End */
+
 /* Headline Section */
 
 @media only screen and (max-width: 768px) {
@@ -61,7 +99,7 @@
     margin: 3px 0;
   }
 
-  /* JS Section */
+  /* JS NavMenu Section */
 
   .logo.change {
     display: none;
@@ -120,7 +158,7 @@
     background: #fff;
   }
 
-  /* JS Section End */
+  /* JS NavMenu Section End */
 
   .navbar.logo {
     display: flex;

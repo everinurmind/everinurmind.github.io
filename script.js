@@ -21,7 +21,7 @@ document.querySelectorAll('.navigation').forEach((link) => link.addEventListener
 // Works Section JS
 
 const worksContainer = document.querySelector('.works-container');
-const containerProject = document.querySelector('.works');
+const containerProject = document.querySelector('#works');
 const overlay = document.querySelector('.overlay');
 
 const cardsContainer = [
@@ -34,6 +34,7 @@ const cardsContainer = [
       'Back End Dev',
       '2015',
     ],
+    mainDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: 'worksimg/Snapshoot Portfolio@2x.png',
     technologies: [
@@ -52,7 +53,8 @@ const cardsContainer = [
       'Back End Dev',
       '2015',
     ],
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    mainDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
     image: 'worksimg/Snapshoot Portfolio@2x (1).png',
     technologies: [
       'html',
@@ -70,6 +72,7 @@ const cardsContainer = [
       'Back End Dev',
       '2015',
     ],
+    mainDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: 'worksimg/Snapshoot Portfolio@2x (2).png',
     technologies: [
@@ -88,6 +91,7 @@ const cardsContainer = [
       'Back End Dev',
       '2015',
     ],
+    mainDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: 'worksimg/Snapshoot Portfolio@2x (3).png',
     technologies: [
@@ -105,20 +109,24 @@ const displayModal = (id) => {
   overlay.style.display = 'block';
   let html = '';
 
-  html += `<div class= "title">
-      <h2 class="heading">${cardsContainer[displayIdOf].name}</h2>
-      <button class="close">
-        <i class="las la-times"></i>
-      </button>
-      </div>
-      <ul class="frame">
-          <li class="client">${cardsContainer[displayIdOf].titleDescription[0]}</li>
-          <li class="dot">&#x2022;</li>
-          <li class="role">${cardsContainer[displayIdOf].titleDescription[1]}</li>
-          <li class="dot">&#x2022;</li>
-          <li class="year">${cardsContainer[displayIdOf].titleDescription[2]}</li>
+  html += `
+  <div calss= "works-card">
+  <div class= "top">
+    <div class="main1">
+        <h2 id="six">${cardsContainer[displayIdOf].name}</h2>
+        <button class="close">
+          <i class="las la-times"></i>
+        </button>
+    </div>
+        <ul class="frame">
+          <li id="client">${cardsContainer[displayIdOf].titleDescription[0]}</li>
+          <li id="dot"></li>
+          <li id="role">${cardsContainer[displayIdOf].titleDescription[1]}</li>
+          <li id="dot"></li>
+          <li id="year">${cardsContainer[displayIdOf].titleDescription[2]}</li>
       </ul>
-      <img class="project-image" src="${cardsContainer[displayIdOf].image}">
+  </div>
+      <img class="image" src="${cardsContainer[displayIdOf].image}">
       <div class='top'>
         <div class=desc>
           <p class="project-description">${cardsContainer[displayIdOf].description}</p>
@@ -141,6 +149,7 @@ const displayModal = (id) => {
             </button>
           </div>
         </div>
+      </div>
       </div>`;
 
   worksContainer.innerHTML = html;
@@ -157,30 +166,34 @@ const displayModal = (id) => {
 cardsContainer.forEach((card) => {
   const boxCard = document.createElement('div');
   boxCard.className = 'box-card';
-  const html = `
-  <div class="works-card">
-  <img class="project-image" src="${card.image}" alt=${card.name}>
-                <div class="info-block">
-                    <div class="top">
-                        <h2 id="six">${card.name}</h2>
-                        <ul class="frame">
-                            <li id="client">${card.titleDescription[0]}</li>
-                            <li id="dot"> </li>
-                            <li id="role">${card.titleDescription[1]}</li>
-                            <li id="dot"> </li>
-                            <li id="year">${card.titleDescription[2]}</li></ul>
-                    </div>
-                            <p>${card.description}</p>
-                    <div class="bottom">
-                        <ul class="tags">
-                        <li>${card.technologies[0]}</li>
-                        <li>${card.technologies[1]}</li>
-                        <li>${card.technologies[2]}</li></ul>
-                        <button class="action" id="${card.id}">See Project</button>
-                    </div>
-                </div>
-            </div>
-  `;
+  const html = 
+`<section id="works">
+  <div class="works-container">
+    <div class="works-card">
+  <img class="image" src="${card.image}" alt=${card.name}>
+    <div class="info-block">
+      <div class="top">
+              <h2 id="six">${card.name}</h2>
+              <ul class="frame">
+                <li id="client">${card.titleDescription[0]}</li>
+                <li id="dot"> </li>
+                <li id="role">${card.titleDescription[1]}</li>
+                <li id="dot"> </li>
+                <li id="year">${card.titleDescription[2]}</li>
+              </ul>
+        </div>
+                <p>${card.mainDescription}</p>
+          <div class="bottom">
+                <ul class="tags">
+                <li>${card.technologies[0]}</li>
+                <li>${card.technologies[1]}</li>
+                <li>${card.technologies[2]}</li></ul>
+                <button class="action" id="${card.id}">See Project</button>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>`;
   containerProject.insertAdjacentHTML('afterbegin', html);
 });
 
