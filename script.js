@@ -16,7 +16,6 @@ document.querySelectorAll('.navigation').forEach((link) => link.addEventListener
   logo.classList.remove('change');
 }));
 
-
 const cardsContainer = [
 
   {
