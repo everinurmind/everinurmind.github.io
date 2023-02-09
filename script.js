@@ -107,14 +107,14 @@ const displayModal = (id) => {
     <div id="column">     
         <div id="tags">
           <ul class="tags">
-            <li>${cardsContainer[displayIdOf].technologies[0]}</li>
-            <li>${cardsContainer[displayIdOf].technologies[1]}</li>
-            <li>${cardsContainer[displayIdOf].technologies[2]}</li>
+            <li id="pr">${cardsContainer[displayIdOf].technologies[0]}</li>
+            <li id="pr">${cardsContainer[displayIdOf].technologies[1]}</li>
+            <li id="pr">${cardsContainer[displayIdOf].technologies[2]}</li>
           </ul>
           <ul class="tags">
-            <li>${cardsContainer[displayIdOf].technologies[3]}</li>
-            <li>${cardsContainer[displayIdOf].technologies[4]}</li>
-            <li>${cardsContainer[displayIdOf].technologies[5]}</li>
+            <li id="pr">${cardsContainer[displayIdOf].technologies[3]}</li>
+            <li id="pr">${cardsContainer[displayIdOf].technologies[4]}</li>
+            <li id="pr">${cardsContainer[displayIdOf].technologies[5]}</li>
           </ul>
         </div>
           <div id="separation"></div>
