@@ -109,9 +109,7 @@ const displayModal = (id) => {
   overlay.style.display = 'block';
   let html = '';
 
-  html += `
-  <div calss= "works-card">
-  <div class= "top">
+  html += `<div class= "part1">
     <div class="main1">
         <h2 id="six">${cardsContainer[displayIdOf].name}</h2>
         <button class="close">
@@ -126,30 +124,24 @@ const displayModal = (id) => {
           <li id="year">${cardsContainer[displayIdOf].titleDescription[2]}</li>
       </ul>
   </div>
-      <img class="image" src="${cardsContainer[displayIdOf].image}">
-      <div class='top'>
-        <div class=desc>
-          <p class="project-description">${cardsContainer[displayIdOf].description}</p>
-        </div>
-        <div class='bottom'>
-          <ul class="tags">
-            <li class="language">${cardsContainer[displayIdOf].technologies[0]}</li>
-            <li class="language">${cardsContainer[displayIdOf].technologies[1]}</li>
-            <li class="language">${cardsContainer[displayIdOf].technologies[2]}</li>
-          </ul>
   
-          <div class="action">
-            <button class="action">
-              <a class="btn-seeLive" href="${cardsContainer[displayIdOf].liveVersion}"> See live </a>
+        <div class="part2">
+        <img class="image" src="${cardsContainer[displayIdOf].image}">
+        <p>${cardsContainer[displayIdOf].description}</p>
+        <div id="tags"><ul class="tags">
+          <li>${cardsContainer[displayIdOf].technologies[0]}</li>
+          <li>${cardsContainer[displayIdOf].technologies[1]}</li>
+          <li>${cardsContainer[displayIdOf].technologies[2]}</li>
+        </ul></div>
+          <div id="separation"></div>
+          <div class="srcgit">
+            <button id="actionbtn" class="action" href="${cardsContainer[displayIdOf].liveVersion}">See live
               <i class="las la-external-link-alt" id="share-sign"></i>
             </button>
-            <button class="action">
-              <a class="btn-seeSource" href="${cardsContainer[displayIdOf].source}">See source </a>
+            <button id="actionbtn" class="action" href="${cardsContainer[displayIdOf].source}">See source
               <i class="lab la-github" id="git-sign"></i>
             </button>
           </div>
-        </div>
-      </div>
       </div>`;
 
   worksContainer.innerHTML = html;
@@ -167,7 +159,6 @@ cardsContainer.forEach((card) => {
   const boxCard = document.createElement('div');
   boxCard.className = 'box-card';
   const html = `<section id="works">
-  <div class="works-container">
     <div class="works-card">
   <img class="image" src="${card.image}" alt=${card.name}>
     <div class="info-block">
@@ -190,7 +181,6 @@ cardsContainer.forEach((card) => {
                 <button class="action" id="${card.id}">See Project</button>
           </div>
         </div>
-      </div>
   </div>
 </section>`;
   containerProject.insertAdjacentHTML('afterbegin', html);
