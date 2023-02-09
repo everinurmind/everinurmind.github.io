@@ -42,9 +42,7 @@
   justify-content: space-between;
 }
 
-.main1 h2 {
-  margin-right: 50px;
-}
+
 
 .close {
   color: #67798e;
@@ -88,11 +86,18 @@
 #column {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 #tags {
   padding: 0 16px 0 16px;
   margin-bottom: 25px;
+  gap: 8px;
+}
+#pr{
+margin-bottom: 8px;
+padding: 4px 12px;
+
 }
 
 #separation {
@@ -402,6 +407,7 @@
     font-size: 32px;
     line-height: 44px;
     color: #172b4d;
+    width: 300px;
   }
 
   .frame {
@@ -519,8 +525,14 @@
   }
 
   #six {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     height: 36px;
-    text-align: left;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
   }
 
   #eight {
@@ -1243,7 +1255,14 @@
   }
 
   #six {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 36px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
   }
 
   #eight {
