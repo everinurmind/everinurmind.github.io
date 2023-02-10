@@ -96,7 +96,9 @@ const displayModal = (id) => {
           <li id="dot"></li>
           <li id="year">${cardsContainer[displayIdOf].titleDescription[2]}</li>
       </ul>
-      <img src="${cardsContainer[displayIdOf].image}">  
+    <div class="image">  
+      <img id="image" src="${cardsContainer[displayIdOf].image}">  
+    </div>
   </div>
   
         

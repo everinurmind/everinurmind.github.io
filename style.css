@@ -11,7 +11,6 @@
 .works-container {
   flex-direction: column;
   justify-content: left;
-  overflow: auto;
   position: fixed;
   width: 94%;
   height: 96%;
@@ -24,6 +23,7 @@
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+  zoom: 0.68;
 }
 
 .overlay {
@@ -36,6 +36,12 @@
   background: #c1c7d0;
   mix-blend-mode: multiply;
   backdrop-filter: blur(8px);
+}
+
+#pop {
+  padding: 16px 16px;
+  width: 100%;
+  height: 100%;
 }
 
 .main1 {
@@ -60,14 +66,16 @@
   align-items: left;
   justify-content: center;
   gap: 12px;
-  padding: 16px;
-  height: 280px;
-  margin-top: 60px;
 }
 
-#frame {
-  margin-top: -10px;
-  margin-bottom: -10px;
+.part1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  max-height: 600px;
+  overflow: hidden;
 }
 
 .part2 {
@@ -76,14 +84,7 @@
   align-items: left;
   justify-content: center;
   gap: 12px;
-  height: 180px;
-  margin-top: 70px;
-}
-
-.part2 img {
-  width: 100%;
-  height: 100%;
-  padding: 0 16px 0 16px;
+  margin-top: 12px;
 }
 
 .part2 p {
@@ -92,8 +93,6 @@
   line-height: 24px;
   color: #344563;
   text-align: left;
-  padding: 0 16px 0 16px;
-  margin-top: 20px;
 }
 
 #column {
@@ -102,8 +101,6 @@
 }
 
 #tags {
-  padding: 0 16px 0 16px;
-  margin-bottom: 15px;
   gap: 8px;
 }
 
@@ -117,7 +114,7 @@
   background: #dfe1e6;
   align-items: center;
   justify-content: center;
-  margin: 0 16px 0 16px;
+  margin: 25px 16px 25px 16px;
 }
 
 .srcgit {
@@ -126,12 +123,11 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 0 16px 0 16px;
-  margin-top: 25px;
+  margin-bottom: 26px;
 }
 
 #actionbtn {
-  margin: 0;
+  margin-top: 0;
   padding: 0;
 }
 
