@@ -210,10 +210,6 @@
     width: 100%;
   }
 
-  .show .navigation-menu {
-    
-  }
-
   .show .navigation {
     display: flex;
     align-items: center;
@@ -776,6 +772,23 @@
   }
 
   /* Contact Section */
+
+  /* JS stylings for contact form */
+
+  #contact div.error-msg {
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(237, 39, 39);
+    text-align: center;
+  }
+
+  .fixed-msg {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ebebff;
+  }
 
   #contact {
     border-top-left-radius: 5.5rem;
@@ -1533,6 +1546,23 @@
   }
 
   /* Contact Section */
+
+  /* JS stylings for contact form */
+
+  #contact div.error-msg {
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(237, 39, 39);
+    text-align: center;
+  }
+
+  .fixed-msg {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ebebff;
+  }
 
   #contact {
     border-top-left-radius: 5.5rem;

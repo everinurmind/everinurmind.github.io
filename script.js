@@ -182,3 +182,23 @@ actbtn.forEach((action) => action.addEventListener('click', (e) => {
   const { id } = e.target;
   displayModal(id);
 }));
+
+// Contact Form JS
+
+const contactForm = document.getElementById('contact-form');
+const clientEmail = document.getElementById('email');
+
+contactForm.addEventListener('submit', (e) => {
+  const validationCheck = clientEmail.value.toLowerCase();
+  if (clientEmail.value === validationCheck) {
+    clientEmail.classList.remove('error');
+    contactForm.removeChild(document.querySelector('.error-msg'));
+    contactForm.removeChild(document.querySelector('.fixed-msg'));
+    contactForm.submit();
+  } else {
+    e.preventDefault();
+    clientEmail.classList.add('error');
+    contactForm.insertAdjacentHTML('afterbegin',
+      `<div class="error-msg">Please enter valid e-mail address, starting with lowercase<div class="fixed-msg">"${validationCheck}"</div></div>`);
+  }
+});
