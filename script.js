@@ -210,24 +210,24 @@ const clientMsg = document.getElementById('msg');
 const inputFields = document.querySelectorAll('.input-field');
 
 const userData = {
-  name: JSON.parse(localStorage.getItem('userData')).name ? JSON.parse(localStorage.getItem('userData')).name: '',
+  name: JSON.parse(localStorage.getItem('userData')).name ? JSON.parse(localStorage.getItem('userData')).name : '',
   email: JSON.parse(localStorage.getItem('userData')).email ? JSON.parse(localStorage.getItem('userData')).email : '',
   message: JSON.parse(localStorage.getItem('userData')).message ? JSON.parse(localStorage.getItem('userData')).message : '',
 };
 
 const contactPart = () => {
-  const storedUserData = JSON.parse(localStorage.getItem('userData'));
-  clientName.value = storedUserData.name;
-  clientEmail.value = storedUserData.email;
-  clientMsg.value = storedUserData.message;
+  const savedData = JSON.parse(localStorage.getItem('userData'));
+  clientName.value = savedData.name;
+  clientEmail.value = savedData.email;
+  clientMsg.value = savedData.message;
 };
 
-const localStorage = (event, data) => {
+const setlocalStorage = (event, data) => {
   userData[data] = event.target.value;
   localStorage.setItem('userData', JSON.stringify(userData));
 };
 
 window.onload = contactPart;
 inputFields.forEach((field) => field.addEventListener('keyup', (e) => {
-  localStorage(e, field.name);
+  setlocalStorage(e, field.name);
 }));
