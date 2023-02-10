@@ -31,7 +31,7 @@ const cardsContainer = [
     name: 'Uber Navigation',
     titleDescription: ['UBER', 'Lead Developer', '2018'],
     mainDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     image: 'worksimg/Snapshoot Portfolio@4x.svg',
     technologies: ['html', 'ruby', 'css', 'javaScript', 'bootstrap', 'gitHub'],
     liveVersion: '#',
@@ -43,7 +43,7 @@ const cardsContainer = [
     name: 'Facebook 360',
     titleDescription: ['FACEBOOK', 'Full Stack Dev', '2015'],
     mainDescription: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     image: 'worksimg/Snapshoot Portfolio@3x.svg',
     technologies: ['html', 'ruby', 'css', 'javaScript', 'bootstrap', 'gitHub'],
     liveVersion: '#',
@@ -55,7 +55,7 @@ const cardsContainer = [
     name: 'Multi-Post Stories',
     titleDescription: ['FACEBOOK', 'Full Stack Dev', '2015'],
     mainDescription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     image: 'worksimg/Snapshoot Portfolio@2x.svg',
     technologies: ['html', 'ruby', 'css', 'javaScript', 'bootstrap', 'gitHub'],
     liveVersion: '#',
@@ -67,7 +67,7 @@ const cardsContainer = [
     name: 'Tonic',
     titleDescription: ['CANOPY', 'Back End Dev', '2015'],
     mainDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     image: 'worksimg/Snapshoot Portfolio@1x.svg',
     technologies: ['html', 'css', 'javaScript', 'bootstrap'],
     liveVersion: '#',
@@ -81,14 +81,15 @@ const displayModal = (id) => {
   overlay.style.display = 'block';
   let html = '';
 
-  html += `<div class= "part1">
+  html += `<div id="pop">
+  <div class= "part1">
     <div class="main1">
         <h2 id="six">${cardsContainer[displayIdOf].name}</h2>
         <button class="close">
           <i class="las la-times"></i>
         </button>
     </div>
-        <ul class="frame">
+        <ul class="frame" id="frame">
           <li id="client">${cardsContainer[displayIdOf].titleDescription[0]}</li>
           <li id="dot"></li>
           <li id="role">${cardsContainer[displayIdOf].titleDescription[1]}</li>
@@ -127,6 +128,7 @@ const displayModal = (id) => {
             </button>
           </div>
           </div>
+      </div>
       </div>`;
 
   worksContainer.innerHTML = html;
