@@ -196,6 +196,6 @@ contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     clientEmail.classList.add('error');
     contactForm.insertAdjacentHTML('afterbegin',
-    `<div class="error-msg">Please enter valid e-mail address, starting with lowercase<div class="fixed-msg">"${validationCheck}"</div></div>`);
+      `<div class="error-msg">Please enter valid e-mail address, starting with lowercase<div class="fixed-msg">"${validationCheck}"</div></div>`);
   }
 });
