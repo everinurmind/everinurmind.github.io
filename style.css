@@ -202,24 +202,31 @@
     position: fixed;
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     background: #6070ff;
     mix-blend-mode: multiply;
     backdrop-filter: blur(10px);
-    width: 100vw;
-    height: 1000px;
-    margin-top: -262px;
-    margin-right: -12px;
+    height: 100%;
+    width: 100%;
   }
 
   .show .navigation-menu {
-    margin-top: 150px;
+    
   }
 
   .show .navigation {
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-top: -100px;
+  }
+
+  .change .navigation-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 32px 0 0 28px;
   }
 
   .change .navigation {
@@ -227,8 +234,6 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 32px;
-    line-height: 44px;
-    margin-bottom: 130px;
   }
 
   .change .navigation:hover {
@@ -236,8 +241,7 @@
   }
 
   .change .bar-top {
-    margin-top: -200px;
-    margin-right: 20px;
+    margin-top: 5px;
     transform: rotate(-45deg) translate(-2px, 2px);
     background: #fff;
   }
