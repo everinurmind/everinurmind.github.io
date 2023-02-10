@@ -31,7 +31,7 @@ const cardsContainer = [
     name: 'Uber Navigation',
     titleDescription: ['UBER', 'Lead Developer', '2018'],
     mainDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: 'worksimg/Snapshoot Portfolio@4x.svg',
     technologies: ['html', 'ruby', 'css', 'javaScript', 'bootstrap', 'gitHub'],
     liveVersion: '#',
@@ -43,7 +43,7 @@ const cardsContainer = [
     name: 'Facebook 360',
     titleDescription: ['FACEBOOK', 'Full Stack Dev', '2015'],
     mainDescription: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: 'worksimg/Snapshoot Portfolio@3x.svg',
     technologies: ['html', 'ruby', 'css', 'javaScript', 'bootstrap', 'gitHub'],
     liveVersion: '#',
@@ -55,7 +55,7 @@ const cardsContainer = [
     name: 'Multi-Post Stories',
     titleDescription: ['FACEBOOK', 'Full Stack Dev', '2015'],
     mainDescription: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: 'worksimg/Snapshoot Portfolio@2x.svg',
     technologies: ['html', 'ruby', 'css', 'javaScript', 'bootstrap', 'gitHub'],
     liveVersion: '#',
@@ -67,9 +67,9 @@ const cardsContainer = [
     name: 'Tonic',
     titleDescription: ['CANOPY', 'Back End Dev', '2015'],
     mainDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     image: 'worksimg/Snapshoot Portfolio@1x.svg',
-    technologies: ['html', 'css', 'javaScript', 'bootstrap'],
+    technologies: ['html', 'ruby', 'css', 'javaScript', 'bootstrap', 'gitHub'],
     liveVersion: '#',
     source: '#',
   },
@@ -96,7 +96,7 @@ const displayModal = (id) => {
           <li id="dot"></li>
           <li id="year">${cardsContainer[displayIdOf].titleDescription[2]}</li>
       </ul>
-      <img class="image" src="${cardsContainer[displayIdOf].image}">
+      <img src="${cardsContainer[displayIdOf].image}">  
   </div>
   
         
@@ -109,13 +109,13 @@ const displayModal = (id) => {
         <div id="tags">
           <ul class="tags">
             <li id="pr">${cardsContainer[displayIdOf].technologies[0]}</li>
-            <li id="pr">${cardsContainer[displayIdOf].technologies[1]}</li>
             <li id="pr">${cardsContainer[displayIdOf].technologies[2]}</li>
+            <li id="pr">${cardsContainer[displayIdOf].technologies[3]}</li>
           </ul>
           <ul class="tags">
-            <li id="pr">${cardsContainer[displayIdOf].technologies[3]}</li>
-            <li id="pr">${cardsContainer[displayIdOf].technologies[4]}</li>
             <li id="pr">${cardsContainer[displayIdOf].technologies[5]}</li>
+            <li id="pr">${cardsContainer[displayIdOf].technologies[1]}</li>
+            <li id="pr">${cardsContainer[displayIdOf].technologies[4]}</li>
           </ul>
         </div>
           <div id="separation"></div>
