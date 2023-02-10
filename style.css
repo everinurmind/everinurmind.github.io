@@ -210,10 +210,6 @@
     width: 100%;
   }
 
-  .show .navigation-menu {
-    
-  }
-
   .show .navigation {
     display: flex;
     align-items: center;
