@@ -202,3 +202,32 @@ contactForm.addEventListener('submit', (e) => {
       `<div class="error-msg">Please enter valid e-mail address, starting with lowercase<div class="fixed-msg">"${validationCheck}"</div></div>`);
   }
 });
+
+// Preserved data Section
+
+const clientName = document.getElementById('name');
+const clientMsg = document.getElementById('msg');
+const inputFields = document.querySelectorAll('.input-field');
+
+const userData = {
+  name: JSON.parse(localStorage.getItem('userData')).name ? JSON.parse(localStorage.getItem('userData')).name: '',
+  email: JSON.parse(localStorage.getItem('userData')).email ? JSON.parse(localStorage.getItem('userData')).email : '',
+  message: JSON.parse(localStorage.getItem('userData')).message ? JSON.parse(localStorage.getItem('userData')).message : '',
+};
+
+const contactPart = () => {
+  const storedUserData = JSON.parse(localStorage.getItem('userData'));
+  clientName.value = storedUserData.name;
+  clientEmail.value = storedUserData.email;
+  clientMsg.value = storedUserData.message;
+};
+
+const localStorage = (event, data) => {
+  userData[data] = event.target.value;
+  localStorage.setItem('userData', JSON.stringify(userData));
+};
+
+window.onload = contactPart;
+inputFields.forEach((field) => field.addEventListener('keyup', (e) => {
+  localStorage(e, field.name);
+}));
