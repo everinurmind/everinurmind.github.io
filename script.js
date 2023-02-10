@@ -182,6 +182,9 @@ actbtn.forEach((action) => action.addEventListener('click', (e) => {
   const { id } = e.target;
   displayModal(id);
 }));
+
+// Contact Form JS
+
 const contactForm = document.getElementById('contact-form');
 const clientEmail = document.getElementById('email');
 
