@@ -205,24 +205,24 @@ contactForm.addEventListener('submit', (e) => {
 
 // Preserved data Section
 
-const clientName = document.getElementById('name');
-const clientMsg = document.getElementById('msg');
-const inputFields = document.querySelectorAll('.input-field');
+let clientName = document.getElementById('name');
+let clientMsg = document.getElementById('msg');
+let inputFields = document.querySelectorAll('.input-field');
 
-const userData = {
-  name: JSON.parse(localStorage.getItem('userData')).name ? JSON.parse(localStorage.getItem('userData')).name : '',
-  email: JSON.parse(localStorage.getItem('userData')).email ? JSON.parse(localStorage.getItem('userData')).email : '',
-  message: JSON.parse(localStorage.getItem('userData')).message ? JSON.parse(localStorage.getItem('userData')).message : '',
+let userData = {
+  name: '',
+  email: '',
+  message: '',
 };
 
-const contactPart = () => {
+let contactPart = () => {
   const savedData = JSON.parse(localStorage.getItem('userData'));
   clientName.value = savedData.name;
   clientEmail.value = savedData.email;
   clientMsg.value = savedData.message;
 };
 
-const setlocalStorage = (event, data) => {
+let setlocalStorage = (event, data) => {
   userData[data] = event.target.value;
   localStorage.setItem('userData', JSON.stringify(userData));
 };
