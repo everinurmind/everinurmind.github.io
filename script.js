@@ -202,3 +202,32 @@ contactForm.addEventListener('submit', (e) => {
       `<div class="error-msg">Please enter valid e-mail address, starting with lowercase<div class="fixed-msg">"${validationCheck}"</div></div>`);
   }
 });
+
+// Preserved data Section
+
+const clientName = document.getElementById('name');
+const clientMsg = document.getElementById('msg');
+const inputFields = document.querySelectorAll('.input-field');
+
+const userData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+const contactPart = () => {
+  const savedData = JSON.parse(localStorage.getItem('userData'));
+  clientName.value = savedData.name;
+  clientEmail.value = savedData.email;
+  clientMsg.value = savedData.message;
+};
+
+const setlocalStorage = (event, data) => {
+  userData[data] = event.target.value;
+  localStorage.setItem('userData', JSON.stringify(userData));
+};
+
+window.onload = contactPart;
+inputFields.forEach((field) => field.addEventListener('keyup', (e) => {
+  setlocalStorage(e, field.name);
+}));
